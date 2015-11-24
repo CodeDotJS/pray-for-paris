@@ -2,22 +2,32 @@ html, body {
   height: 100%;
   overflow: hidden;
 }
-body {
+
+body {  
   background-color: white;
+  background-image: linear-gradient(to bottom, 
+    #FF0000 0%,    #FF0000 16.6%,
+    #FF0000 16.7%, #FF0000 33.3%,
+    #FFFFFF 33.4%, #FFFFFF 50%,
+    #FFFFFF 50%,   #FFFFFF 66.6%,
+    #0000FF 66.7%, #0000FF 83.3%,
+    #0000FF 83.4%, #0000FF 100%)
 }
+
 input {
   display: block;
   margin: 1em auto;
   width: 225px;
 }
+
 img, canvas {
   max-width: 500px;
   max-height: 500px;
   position: absolute;
-  left: 50%;
-  top: 50%;
+  left: 50%; top: 50%;
   transform: translate(-50%, -50%);
 }
+
 canvas {
   opacity: 0.6;
   mix-blend-mode: hard-light;

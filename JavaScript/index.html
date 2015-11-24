@@ -1,18 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Pray For Paris</title>
+    <link rel="stylesheet" href="css/normalize.css">
+        <style type = "text/css">
+      html, body {
+  height: 100%;
+  overflow: hidden;
+}
 
-<head>
-  <meta charset="UTF-8">
-  <title>Pray For Paris</title>
+body {  
+  background-color: white;
+  background-image: linear-gradient(to bottom, 
+    #FF0000 0%,    #FF0000 16.6%,
+    #FF0000 16.7%, #FF0000 33.3%,
+    #FFFFFF 33.4%, #FFFFFF 50%,
+    #FFFFFF 50%,   #FFFFFF 66.6%,
+    #0000FF 66.7%, #0000FF 83.3%,
+    #0000FF 83.4%, #0000FF 100%)
+}
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/prefixfree.min.js"></script>
-</head>
-<!-- Work under progress -->
-<body>
-  <input type="file" id="inp" />
-  <script src="js/index.js"></script>
-</body>
+input {
+  display: block;
+  margin: 1em auto;
+  width: 225px;
+}
 
+img, canvas {
+  max-width: 500px;
+  max-height: 500px;
+  position: absolute;
+  left: 50%; top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+canvas {
+  opacity: 0.6;
+  mix-blend-mode: hard-light;
+}
+    </style>
+        <script src="js/prefixfree.min.js"></script>
+  </head>
+  <body>
+    <input type="file" id="inp"/>
+        <script src="js/index.js"></script>
+          </body>
 </html>
